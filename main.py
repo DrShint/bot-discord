@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands
 from BOT_MUSIC_SHINT import music
 
@@ -10,4 +11,4 @@ for i in range (len(cogs)):
     cogs[i].setup(client)
 
 
-client.run('TOKEN')
+client.run(os.environ['TOKEN'])
